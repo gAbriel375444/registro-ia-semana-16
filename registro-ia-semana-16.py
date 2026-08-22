@@ -26,13 +26,18 @@ y = np.array([0, 1, 0, 1, 1, 0])
 from sklearn.model_selection import train_test_split
 
 
-# X_train recebe as horas e faltas de 4 alunos
+# X_train recebe as horas e faltas de 4 alunos de treino
 # X_test  recebe as horas e faltas de 2 alunos de teste
-# y_test  recebe os resultados se os 4 alunos foram ou não aprovados
-# y_teste recebe os resultados se os 2 alunos de teste foram ou não aprovados
+# y_train  recebe os resultados se os 4 alunos foram ou não aprovados de treino
+# y_test recebe os resultados se os 2 alunos de teste foram ou não aprovados
 
 # separando 33% dos dados para teste (2 dos 6 alunos)
 # e fixando o random_state (tipo a seed do teste) para manter o mesmo resultado
 X_train, X_test, y_train, y_test = train_test_split(
     X, y, test_size=0.33, random_state=42
 )
+
+# debug
+#exibe os 4 alunos usados para treino
+# print(X_train)
+
