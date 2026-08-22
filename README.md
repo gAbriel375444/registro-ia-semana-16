@@ -1,2 +1,3 @@
-Etapa 1: instalando a biblioteca scikit-learn 
-colei pip install scikit-learn numpy no terminal e aguardei a instalação da biblioteca
+Etapa 1: instalei a biblioteca scikit-learn, importei a biblioteca numpy e a dei um apelido (np) e trouxe a matriz X e o vetor Y.
+
+Etapa 2: 
