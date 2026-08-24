@@ -41,3 +41,27 @@ X_train, X_test, y_train, y_test = train_test_split(
 #exibe os 4 alunos usados para treino
 # print(X_train)
 
+
+from sklearn.tree import DecisionTreeClassifier
+
+modelo = DecisionTreeClassifier(random_state=42)
+
+modelo.fit(X_train, y_train)
+
+
+from sklearn.metrics import accuracy_score 
+
+y_pred = modelo.predict(X_test)
+
+acuracia = accuracy_score(y_test, y_pred)
+
+print(f"Acurácia: {acuracia * 100:.1f}%")
+
+# novos_alunos = np.array(
+#     [1,4],
+#     [4,1],
+#     [0,6])
+
+# previsoes =  modelo.predict(novos_alunos)
+
+# print(previsoes)
