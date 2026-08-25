@@ -1,5 +1,10 @@
 # Roteiro de aula - Gabriel Silva - 3°C #
 
+## Etapa 1
+
+### Explique, em comentários no código, o que representam x e y.
+
+R: O X representa as características de entrada (horas de estudo e número de faltas de cada aluno) e o y representa o resultado/resposta esperada (0 para reprovado, 1 para aprovado).
 
 ## Etapa 2 ##
 
