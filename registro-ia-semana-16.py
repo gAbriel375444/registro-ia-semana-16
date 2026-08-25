@@ -38,30 +38,38 @@ X_train, X_test, y_train, y_test = train_test_split(
 )
 
 # debug
-#exibe os 4 alunos usados para treino
+# exibe os 4 alunos usados para treino
 # print(X_train)
 
-
+# importa o algoritmo de Árvore de Decisão do Scikit-Learn
 from sklearn.tree import DecisionTreeClassifier
 
+# salvando a arvore de decisão (que tem a seed 42) dentro de uma var chamada modelo
 modelo = DecisionTreeClassifier(random_state=42)
 
+# treina o modelo com os dados de treino para que ele aprenda as regras de decisão
 modelo.fit(X_train, y_train)
 
-
+# importa a função para calcular a acurácia - a taxa de acerto
 from sklearn.metrics import accuracy_score 
 
+# faz o modelo prever as respostas para os dados de teste
 y_pred = modelo.predict(X_test)
 
+# compara as previsões com as respostas certas pra calcular a porcentagem de acertos
 acuracia = accuracy_score(y_test, y_pred)
 
+# exibe na tela a acurácia formatada em porcentagem
 print(f"Acurácia: {acuracia * 100:.1f}%")
 
+# cria um novo conjunto de dados com 3 alunos inéditos (horas de estudo, faltas)
 novos_alunos = np.array([
     [1,4],
     [4,1],
     [0,6]])
 
+# usa o modelo já treinado para prever a aprovação desses novos alunos
 previsoes =  modelo.predict(novos_alunos)
 
+# imprime o resultado final da previsão para os novos alunos
 print(previsoes)
