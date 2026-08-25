@@ -57,11 +57,11 @@ acuracia = accuracy_score(y_test, y_pred)
 
 print(f"Acurácia: {acuracia * 100:.1f}%")
 
-# novos_alunos = np.array(
-#     [1,4],
-#     [4,1],
-#     [0,6])
+novos_alunos = np.array([
+    [1,4],
+    [4,1],
+    [0,6]])
 
-# previsoes =  modelo.predict(novos_alunos)
+previsoes =  modelo.predict(novos_alunos)
 
-# print(previsoes)
+print(previsoes)
