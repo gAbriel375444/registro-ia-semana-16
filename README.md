@@ -22,7 +22,7 @@ R: Significa fornecer os dados de entrada e as respostas corretas para que o alg
 
 ### Explique o papel dos dados de treino nesse processo.
 
-R:Os dados de treino fornecem exemplos com perguntas e respostas para o algoritmo identificar padrões e criar suas regras de decisão.
+R: Os dados de treino fornecem exemplos com perguntas e respostas para o algoritmo identificar padrões e criar suas regras de decisão.
 
 ## Etapa 5
 
